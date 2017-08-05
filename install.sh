@@ -16,4 +16,6 @@ ln -s ~/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme ~/.
 curl -L -O https://rawgit.com/gabrielelana/awesome-terminal-fonts/patching-strategy/patched/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
 open SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
 
+mv -f .zshrc ~/.zshrc
+
 echo 'Done. Restart iterm2. Then set font to SourceCodePro+Powerline+Awesome and set Theme to Solarized Dark.'

@@ -1,0 +1,25 @@
+# rebase -i
+bind main    I !git rebase -i %(commit)
+bind diff    I !git rebase -i %(commit)
+
+# revert
+bind main    ! !git revert %(commit)
+bind diff    ! !git revert %(commit)
+
+# reset --hard
+bind main    H !git reset --hard %(commit)
+bind diff    H !git reset --hard %(commit)
+
+# reflog
+bind generic R !sh -c "git reflog --pretty=raw | tig --pretty=raw"
+
+# reflog reset --hard
+bind generic H !git reset --hard HEAD@{"%(prompt Enter HEAD@{} number: )"}
+
+# checkout
+bind main    C ?git checkout %(commit)
+bind diff    C ?git checkout %(commit)
+
+# cherry-pick
+bind main    P ?git cherry-pick %(commit)
+bind diff    P ?git cherry-pick %(commit)

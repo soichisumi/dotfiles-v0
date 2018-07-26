@@ -15,11 +15,12 @@ alias o='a -e xdg-open' # quick opening files with xdg-open
 alias ls='ls -al'
 alias ggt='go get -v'
 alias psthis='git push -u origin HEAD'
-alias xno='xargs -n1 open'
+alias xo='xargs -n1 open'
 
 # gcloud, kube
 alias gchange='gcloud config configurations activate'
 alias gcl='gcloud'
+alias gcal='gcloud auth application-default login'
 
 alias kube='kubectl'
 alias kp='kube-prompt'

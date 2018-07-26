@@ -54,7 +54,6 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 
-
 # pyenv setting 
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
@@ -69,8 +68,6 @@ export PATH="$HOME/google-cloud-sdk/bin/:$PATH"
 export GOROOT=$(go env GOROOT)
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
-export PATH="/Users/s-sumi/blockchain/bitcoin/src:$PATH"
 
 # nvm setting
 export NVM_DIR="$HOME/.nvm"

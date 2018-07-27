@@ -129,7 +129,7 @@
 	email = yoyoyousei2016@gmail.com
 	name = yoyoyousei
 [ghq]
-	root = /Users/s-sumi/go/src
+	root = ~/go/src
 [url "git@github.com"]
 [url "git@github.com:"]
 	insteadOf = https://github.com/

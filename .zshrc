@@ -56,11 +56,11 @@ if [ -f ~/.zshrc.local ]; then source ~/.zshrc.local; fi
 eval "$(fasd --init auto)"
 
 # peco
-bindkey ‘^]’ peco-src
+bindkey "^]" peco-src
 function peco-src(){
- local src=$(ghq list --full-path | peco --query “$LBUFFER”)
+	local src=$(ghq list --full-path | peco --query "$LBUFFER")
  if [ -n “$src” ]; then
-   BUFFER=“cd $src”
+   BUFFER="cd $src"
    zle accept-line
  fi
  zle -R -c

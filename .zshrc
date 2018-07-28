@@ -78,3 +78,5 @@ export LANG
 
 # set env_val for gcp pubsub emulator
 # $(gcloud beta emulators pubsub env-init)
+
+export BOOST_ROOT=$HOME/Downloads/boost_1_64_0

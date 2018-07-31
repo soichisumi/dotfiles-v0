@@ -12,10 +12,29 @@ alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-open
 
 # etc
-alias ls='ls -al'
 alias ggt='go get -v'
 alias psthis='git push -u origin HEAD'
 alias xo='xargs -n1 open'
+alias ls='exa'
+alias l='ls -1'
+alias la='ls -a'
+alias ll='ls -ahl'
+alias lt='ls -T'
+alias lsd='ls -l | grep "^d"'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ...='../..'
+
+alias ps\?='ps aux | grep -v grep | grep'
+
+mkdir_cd() {
+  \mkdir -p $* && cd $_
+}
+alias mkdir='mkdir_cd'
+
+alias shl='exec $SHELL -l'
 
 # gcloud, kube
 alias gchange='gcloud config configurations activate'

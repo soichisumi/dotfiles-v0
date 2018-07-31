@@ -133,7 +133,7 @@
 [include]
   path = .gitconfig.user
 [user]
-	email = yoyoyousei2016@gmail.com
+	email = atom.soichi0407@gmail.com
 	name = yoyoyousei
 [ghq]
 	root = ~/go/src
@@ -147,3 +147,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	template = ~/.gitmessage 
